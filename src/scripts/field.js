@@ -1,5 +1,7 @@
 
 const plantArr = []
+
+
 export const addPlant = (seed) =>{
 plantArr.push(seed)
 
