@@ -8,12 +8,10 @@ for(const plant of plantsArr){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
         }
-    } else if(Array.isArray(plant)){
-       //this is checking for corn array
-        const onePlant = plant[0]
-        for(let i = 0;i<onePlant.output;i++){
-
-            seedsArr.push(onePlant)
+    } else if(plant.type === "Corn"){
+        
+        for(let i = 0;i<plant.output/2;i++){
+            seedsArr.push(plant)
         }
     }else if(plant.type === "Potato"){
         for(let i = 0;i<plant.output;i++){

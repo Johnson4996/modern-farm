@@ -9,7 +9,7 @@ console.log(yearlyPlan)
 const seedToPlant = plantSeeds(yearlyPlan)
 const plantArr = usePlants ()
 const seedsArr = harvestPlants(plantArr)
-console.log(plantArr)
+console.log(seedsArr)
 
 
 
