@@ -8,29 +8,26 @@ for(const plant of plantsArr){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
         }
-    }
-    
-    if(plant.type === "Corn"){
-        for(let i = 0;i<plant.output/5;i++){
-            seedsArr.push(plant)
+    } else if(Array.isArray(plant)){
+       //this is checking for corn array
+        const onePlant = plant[0]
+        for(let i = 0;i<onePlant.output;i++){
+
+            seedsArr.push(onePlant)
         }
-    }
-    if(plant.type === "Potato"){
+    }else if(plant.type === "Potato"){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
         }
-    }
-    if(plant.type === "Soybean"){
+    }else if(plant.type === "Soybean"){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
         }
-    }
-    if(plant.type === "Sunflower"){
+    }else if(plant.type === "Sunflower"){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
         }
-    }
-    if(plant.type === "Wheat"){
+    }else if(plant.type === "Wheat"){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
         }
