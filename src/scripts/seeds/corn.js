@@ -1,4 +1,4 @@
-export const createcorn = () => { 
+export const createCorn = () => { 
     return [
     {
     type: "Corn",
