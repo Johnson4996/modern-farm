@@ -1,7 +1,13 @@
 import {createPlan} from "./plan.js"
-import {createWheat} from "./seeds/wheat.js"
+import { usePlants } from "./field.js"
+import {plantSeeds} from "./tractor.js"
+
 
 const yearlyPlan = createPlan()
-
 console.log(yearlyPlan)
-console.log(createWheat())
+const seedToPlant = plantSeeds(yearlyPlan)
+console.log(usePlants())
+
+
+
+
