@@ -3,7 +3,7 @@ export const harvestPlants = (plantsArr) =>{
 
 const seedsArr = []
 
-for(const plant of plantsArr){
+plantsArr.map(plant => {
     if(plant.type === "Asparagus"){
         for(let i = 0;i<plant.output;i++){
             seedsArr.push(plant)
@@ -30,7 +30,7 @@ for(const plant of plantsArr){
             seedsArr.push(plant)
         }
     }
-}
+})
 
 
 return seedsArr
